@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f2f7">
+  <title>My Phone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="phone" aria-label="โทรศัพท์จำลอง">
+    <div class="status"><span id="statusTime">9:41</span><span>●●●  Wi-Fi  ▰</span></div>
+    <section class="screen">
+      <header class="greeting">
+        <p id="dateLabel">วันเสาร์ที่ 24 ตุลาคม</p>
+        <h1>สวัสดี 👋</h1>
+        <p>โทรศัพท์จำลองของคุณ</p>
+      </header>
+      <div class="app-grid" id="appGrid">
+        <button class="app" data-app="messages"><span class="app-icon messages">✉</span><span>Messages</span></button>
+        <button class="app" data-app="social"><span class="app-icon social">◎</span><span>Social</span></button>
+        <button class="app" data-app="photos"><span class="app-icon photos">✿</span><span>Photos</span></button>
+        <button class="app" data-app="notes"><span class="app-icon notes">▤</span><span>Notes</span></button>
+        <button class="app" data-app="contacts"><span class="app-icon contacts">♙</span><span>Contacts</span></button>
+        <button class="app" data-app="settings"><span class="app-icon settings">⚙</span><span>Settings</span></button>
+      </div>
+      <div class="dock" aria-label="แอปโปรด">
+        <button class="dock-app" data-app="messages" aria-label="Messages">✉</button>
+        <button class="dock-app" data-app="contacts" aria-label="Contacts">♙</button>
+        <button class="dock-app" data-app="photos" aria-label="Photos">✿</button>
+      </div>
+    </section>
+    <section class="app-window" id="appWindow" hidden>
+      <div class="app-toolbar"><button id="backButton" class="back">‹ หน้าหลัก</button><strong id="appTitle">แอป</strong><span></span></div>
+      <div class="app-content" id="appContent"></div>
+    </section>
+    <div class="home-indicator"></div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
